@@ -17,7 +17,7 @@ provider "google" {
   zone    = "us-west1-a"
   credentials  ="keys.json"
 }
-resource "google_storage_bucket" "bucket1" {
+resource "google_storage_bucket" "bucket2" {
   name                        = var.name
   project                     = "anthos-installation"
   location                    = var.location
@@ -107,7 +107,7 @@ resource "google_storage_bucket_iam_member" "members" {
   for_each = {
     for m in var.iam_members : "${m.role} ${m.member}" => m
   }
-  bucket = google_storage_bucket.bucket1.name
+  bucket = google_storage_bucket.bucket2.name
   role   = each.value.role
   member = each.value.member
 }
