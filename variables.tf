@@ -32,7 +32,7 @@ variable "labels" {
 variable "bucket_policy_only" {
   description = "Enables Bucket Policy Only access to a bucket."
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "versioning" {
