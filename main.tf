@@ -17,7 +17,7 @@ provider "google" {
   zone    = "us-west1-a"
   credentials  ="keys.json"
 }
-resource "google_storage_bucket" "bucket" {
+resource "google_storage_bucket" "bucket1" {
   name                        = var.name
   project                     = "anthos-installation"
   location                    = var.location
