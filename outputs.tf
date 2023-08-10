@@ -2,15 +2,15 @@
 
 output "bucket" {
   description = "The created storage bucket"
-  value       = google_storage_bucket.bucket1
+  value       = google_storage_bucket.bucket2
 }
 
 output "name" {
   description = "Bucket name."
-  value       = google_storage_bucket.bucket1.name
+  value       = google_storage_bucket.bucket2.name
 }
 
 output "url" {
   description = "Bucket URL."
-  value       = google_storage_bucket.bucket1.url
+  value       = google_storage_bucket.bucket2.url
 }
