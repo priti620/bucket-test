@@ -2,7 +2,7 @@
 variable "name" {
   description = "The name of the bucket."
 
-  default =  "test2111"
+  default =  "test2305"
 }
 
 variable "gcp_project" {
